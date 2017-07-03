@@ -4,3 +4,4 @@ spec
 .eslintrc.js
 .nyc_output
 .travis.yml
+.gitignore

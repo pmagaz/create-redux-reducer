@@ -1,4 +1,5 @@
 class NoFunctionProvided extends Error {
+  /* istanbul ignore next */
   constructor(name) {
     super();
     this.name = 'CreateReduxReducer';

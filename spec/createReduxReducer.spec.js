@@ -19,6 +19,38 @@ describe('CreateReduxReducer', () => {
     reducer(expectedState, expectedAction);
 
   });
+  
+  it('should return state with incorrect action type', () => {
+  const reducerFunction = (state, action) => {
+      expect(state).deep.equal(expectedState);
+      expect(action).deep.equal(expectedAction);
+      return { ...state };
+    };
+
+    const actionHandlers = { TEST: reducerFunction };
+    const expectedState = { initialState: true };
+    const expectedAction = { type: 'FOO', payload: { id: 22 } }; 
+    const reducer = createReduxReducer(actionHandlers, expectedState);    
+    
+    reducer(expectedState, expectedAction);
+
+  });
+
+    it('should return state without state and action', () => {
+      const reducerFunction = (state, action) => {
+      expect(state).deep.equal(expectedState);
+      expect(action).deep.equal(expectedAction);
+      return { ...state };
+    };
+
+    const actionHandlers = { TEST: reducerFunction };
+    const expectedState = { initialState: true };
+    const expectedAction = { type: 'FOO', payload: { id: 22 } }; 
+    const reducer = createReduxReducer(actionHandlers, expectedState);    
+    
+    reducer();
+
+  });
 
    it('should return state without action or state', () => {
     const actionHandlers = { TEST: reducerFunction };
@@ -26,13 +58,24 @@ describe('CreateReduxReducer', () => {
     const expectedAction = { type: 'TEST' }; 
     const reducer = createReduxReducer(actionHandlers);
 
-    reducer();
+    reducer(expectedState, expectedAction);
 
     function reducerFunction(state, action) {
       expect(state).deep.equal(expectedState);
       expect(action).deep.equal(expectedAction);
       return { ...state };
     }
+
+  });
+
+    it('should throw Error with no actionhandlers provided', (done) => {
+    const actionHandlers = { TEST: 22 };
+    const expectedState = { initialState: true };
+    const expectedAction = { type: 'TEST', payload: { id: 22 } }; 
+    const reducer = createReduxReducer(null);    
+    
+    expect(() => reducer(expectedState, expectedAction)).to.throw(Error);
+    done();
 
   });
 

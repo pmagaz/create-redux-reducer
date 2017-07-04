@@ -4,8 +4,6 @@
     ],
     "extension": [
       "js"
-    ],
-     "sourceMap": false,
-    "instrument": false
+    ]
 }
 

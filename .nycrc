@@ -1,0 +1,11 @@
+{
+   "exclude": [
+      "**/*.spec.js"
+    ],
+    "extension": [
+      "js"
+    ],
+     "sourceMap": false,
+    "instrument": false
+}
+

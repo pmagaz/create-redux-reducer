@@ -5,4 +5,7 @@ coverage
 .eslintrc.js
 .nyc_output
 .travis.yml
-.gitignore
+.appveyor.yml
+.nycrc
+*.swp
+*.log

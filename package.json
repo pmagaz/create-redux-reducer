@@ -1,6 +1,6 @@
 {
   "name": "create-redux-reducer",
-  "version": "0.9.6",
+  "version": "1.0.0",
   "description": "Create Redux Reducer creates a reducer from an object",
   "author": {
     "name": "Pablo Magaz",

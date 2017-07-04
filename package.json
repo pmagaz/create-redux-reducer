@@ -2,10 +2,7 @@
   "name": "create-redux-reducer",
   "version": "1.0.0",
   "description": "Create Redux Reducer creates a reducer from an object",
-  "author": {
-    "name": "Pablo Magaz",
-    "email": "magazpablo@gmail.com"
-  },
+  "author": "Pablo Magaz <magazpablo@gmail.com>",
   "main": "lib/index.js",
   "scripts": {
     "clean": "rimraf lib coverage",
@@ -46,5 +43,6 @@
     "mocha": "3.4.2",
     "nyc": "11.0.3",
     "rimraf": "2.6.1"
-  }
+  },
+  "dependencies": {}
 }

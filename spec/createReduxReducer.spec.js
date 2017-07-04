@@ -1,7 +1,5 @@
-import { expect, should } from 'chai';
+import { expect } from 'chai';
 import { createReduxReducer } from '../src/createReduxReducer';
-import { createStore, applyMiddleware, combineReducers } from 'redux';
-
 
 describe('CreateReduxReducer', () => {
  

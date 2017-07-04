@@ -5,7 +5,7 @@
 [![Coverage Status](https://coveralls.io/repos/github/pmagaz/create-reduxreducer/badge.svg?branch=master)](https://coveralls.io/github/pmagaz/create-reduxreducer?branch=master)
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 
-`create-reduxreducer` creates a reducer from an object. so you can easyly split your reducers among functions for each actionType instead of use switch case for filter them.  
+`create-reduxreducer` creates a reducer from an object. so you can easyly split your reduce functions as individual function for each actionType instead of use switch case for filter them.
 
 ## Table of contents
 
